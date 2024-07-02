@@ -1,0 +1,297 @@
+.upload-property3-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.propety-image-property3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #020024 0%, #002244 35%, #020024 100%);
+  padding: 55px 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.propety-pic-property3 {
+  width: 450px;
+  height: 450px;
+  top: -22px;
+  position: relative;
+  left: 0;
+  margin: 40px 0;
+  filter: drop-shadow(-6px 40px 23px rgba(0, 0, 0, 0.5));
+}
+
+.upload-property3-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+
+.upload-property3-header .bathrooms-input,
+.upload-property3-header h1 {
+  margin: 20px;
+}
+
+.bath-error {
+  color: #ff9090;
+}
+
+.upload-property3-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upload-property3-footer > button {
+  display: flex;
+  border: 0;
+  padding: 15px 25px;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  top: 86px;
+  left: 189px;
+  background: linear-gradient(to bottom, #ae593a 0%, #ae593a 100%);
+  transition: 200ms;
+  margin-bottom: 60px;
+}
+
+.upload-property3-footer > button > span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: white;
+}
+
+.bathrooms-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  border: 1px #fff solid;
+  border-radius: 23px;
+  margin-top: 20px;
+}
+
+.bathrooms-input1-property3 {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  color: #fff;
+}
+
+.input-property3 {
+  color: #fff;
+}
+
+.input-btn {
+  display: contents;
+  gap: 22px;
+}
+
+.input-btn span {
+  position: relative;
+  top: 1px;
+}
+
+.input-btn button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.add-photoes {
+  display: contents;
+  gap: 22px;
+}
+
+.photo-error {
+  position: absolute;
+  top: 441px;
+}
+
+.add-photoes button {
+  font-size: 24px;
+  position: relative;
+  top: 31px;
+  left: -60px;
+  border-radius: 5px;
+  background-color: #010625;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.uploadimg {
+  display: none;
+}
+
+.uploadimg[type="file"] {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .bathrooms-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 346px;
+    height: 200px;
+
+    border-radius: 23px;
+    margin-top: 20px;
+  }
+
+  .bathrooms-input1-property3 {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    color: #fff;
+  }
+
+  .propety-image-property3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .propety-pic-property3 {
+    display: none;
+    height: 350px;
+    top: -22px;
+    object-fit: contain;
+    position: relative;
+    left: 0;
+    margin: 40px 0;
+    filter: drop-shadow(-6px 40px 23px rgba(0, 0, 0, 0.5));
+  }
+
+  .upload-property3-footer > button {
+    display: flex;
+    border: 0;
+    padding: 15px 115px;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    top: 14px;
+    left: -1px;
+    background: linear-gradient(to bottom, #ae593a 0%, #ae593a 100%);
+    transition: 200ms;
+    margin-bottom: 60px;
+  }
+
+  .upload-property3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-error {
+    position: absolute;
+    top: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bathrooms-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 621px;
+    height: 303px;
+    border-radius: 23px;
+    margin-top: 20px;
+  }
+
+  .bathrooms-input1-property3 {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    color: #fff;
+  }
+
+  .propety-image-property3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .propety-pic-property3 {
+    display: none;
+    height: 350px;
+    top: -22px;
+    object-fit: contain;
+    position: relative;
+    left: 0;
+    margin: 40px 0;
+    filter: drop-shadow(-6px 40px 23px rgba(0, 0, 0, 0.5));
+  }
+
+  .upload-property3-footer > button {
+    display: flex;
+    border: 0;
+    padding: 15px 115px;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    top: 14px;
+    left: -1px;
+    background: linear-gradient(to bottom, #ae593a 0%, #ae593a 100%);
+    transition: 200ms;
+    margin-bottom: 60px;
+  }
+
+  .upload-property3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-error {
+    position: absolute;
+    top: 515px;
+  }
+
+  .bath-error {
+    color: #ff9090;
+    position: absolute;
+    top: 140px;
+  }
+}

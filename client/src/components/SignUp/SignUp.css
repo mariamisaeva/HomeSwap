@@ -1,0 +1,278 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Ogg", "Inter";
+  background-color: #010625;
+}
+
+.sign-up {
+  width: 100%;
+  height: 80vh;
+}
+
+.sign-up-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  margin: 20px;
+}
+
+.left {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 385px;
+  background-color: #010625;
+}
+
+.right {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 150px;
+  height: 150px;
+}
+
+.left form {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-up .login-text {
+  position: relative;
+  width: 385px;
+  top: -20px;
+  font-size: 44px;
+  width: fit-content;
+  text-transform: uppercase;
+  color: white;
+}
+
+.sign-up .login-text .login-text-span {
+  color: #ae593a;
+  font-weight: bold;
+}
+
+.sign-up .left p {
+  margin-bottom: 5px;
+}
+
+.user-name,
+.password-input {
+  outline: none;
+  background-color: #fcf7e8;
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sign-up .left .user {
+  display: flex;
+  gap: 30px;
+}
+
+.sign-up .password {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up .left .submit {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 44px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  left: -7px;
+  border-radius: 10px;
+  color: white;
+}
+
+.sign-up .left .submit button {
+  background-color: #ae593a;
+  border-style: none;
+  transition: 0.2s;
+  transition:
+    background-color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+.sign-up .left .submit button:disabled {
+  background-color: grey;
+}
+
+.login-qustion {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.login-qustion .login-qustion-span {
+  color: #ae593a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-toggle {
+  position: relative;
+  top: -35px;
+  left: 190px;
+}
+
+.password-toggle > path {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .sign-up-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sign-up .login-text {
+    position: relative;
+    top: -5px;
+    padding-top: 10px;
+  }
+}
+
+.sign-up .left .submit button:hover {
+  background-color: #854326;
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .image-grid img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .left {
+    width: 10px;
+  }
+
+  .user-name,
+  .password-input {
+    outline: none;
+    background-color: #fcf7e8;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .sign-up-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sign-up .login-text {
+    position: relative;
+    top: -5px;
+    padding-top: 10px;
+  }
+}
+
+.error {
+  color: #ff9090;
+  font-size: 14px;
+}
+
+input {
+  color: #010625;
+  font-family: "Inter";
+}
+
+::placeholder {
+  font-family: "Inter";
+  color: #010625;
+}
+
+.error-user {
+  color: #ff9090;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) {
+  .image-grid img {
+    width: 234px;
+    height: 234px;
+  }
+
+  .left {
+    width: 10px;
+  }
+
+  .user-name,
+  .password-input {
+    outline: none;
+    background-color: #fcf7e8;
+    width: 670px;
+    padding: 15px;
+    font-size: 23px;
+    border-radius: 10px;
+  }
+
+  .sign-up-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sign-up .login-text {
+    position: relative;
+    top: -5px;
+    padding-top: 10px;
+  }
+
+  .login-qustion {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+  }
+
+  .sign-up .left .submit {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 44px;
+    font-size: 38px;
+    cursor: pointer;
+    position: relative;
+    left: -7px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .password-toggle {
+    position: relative;
+    top: -35px;
+    left: 660px;
+    font-size: 20px;
+    width: fit-content;
+  }
+}

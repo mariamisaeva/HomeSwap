@@ -1,0 +1,153 @@
+.right-screen-img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.img-container {
+  width: 400px;
+}
+
+.home-type-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon-btn.activeHome .icon-size-change {
+  color: #ae593a;
+}
+
+.input-text {
+  display: inline-block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.submit-btn-container {
+  align-self: end;
+  margin: auto 80px;
+}
+
+.input-submit {
+  width: 120px;
+  font-size: 18px;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  align-self: flex-end;
+  transition: 0.2s ease-in-out;
+  padding: 15px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #ae593a 0%, #ae593a 100%);
+}
+
+.input-submit:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.white-border {
+  border: 1px solid #ffffff90;
+  border-radius: 10px;
+}
+
+.fields-container {
+  padding: 16px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon-size-change {
+  font-size: 50px;
+}
+
+.right-screen-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-left-container {
+  margin: 0 100px;
+  width: 80%;
+}
+
+.error-property1 {
+  color: #ff9090;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .first-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .form-left-container {
+    margin: auto;
+  }
+
+  .icon-size-change {
+    font-size: 40px;
+  }
+
+  .submit-btn-container {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .first-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .form-left-container {
+    margin: auto;
+  }
+
+  .home-type-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-left-container,
+  .right-screen-container {
+    width: 80%;
+  }
+
+  .submit-btn-container {
+    margin: 15px auto;
+  }
+}

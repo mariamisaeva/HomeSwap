@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --bg-color: #b7d9e4;
+  --primary-color: #000;
+  --input-bg: #f5f5f6;
+  --light-gray: #ccc;
+  --light-darkish-blue: #1366ba;
+  --darkish-grey: #333333;
+}
+
+.search-container-main {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.search-container-home-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-title {
+  color: var(--input-bg);
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -80px;
+}
+
+.search-container {
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 60px;
+  background-color: var(--input-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  height: 25px;
+}
+
+.search-criteria {
+  display: flex;
+  justify-content: space-between;
+  color: var(--darkish-gray);
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  width: 100%;
+}
+
+.search-container .search-area,
+.search-container .search-area2 {
+  margin-right: 10px;
+}
+
+.search-criteria span {
+  text-transform: uppercase;
+  color: var(--darkish-grey);
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+location-container-search,
+.property-container-search,
+.bedrooms-container-search,
+.amenities-container-search {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  color: var(--darkish-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar-search-icon {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  z-index: -1;
+  width: 30px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.search-icon-container {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.search-icon-container .search-bar-search-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+.search-city-country {
+  display: flex;
+  flex-direction: row !important;
+  gap: 10px;
+}
+
+.search-area,
+.search-area2 {
+  max-width: 200px;
+
+  margin-left: 45px;
+  display: inline-block;
+}
+
+.search-area,
+.search-area2 {
+  width: 100px;
+}
+
+.search-type {
+  margin-left: -70px;
+}
+
+.search-area::placeholder,
+.search-area2::placeholder {
+  font-size: 13px;
+  margin-left: 40px;
+}
+
+.search-type,
+.search-bedrooms,
+.search-amenities {
+  width: 200px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--input-bg);
+  padding: 4px;
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-width="2" d="M6 9l6 6 6-6"/></svg>')
+    no-repeat right 5px center;
+}
+.search-type ::placeholder,
+.search-bedrooms ::placeholder,
+.search-amenities ::placeholder {
+  font-size: 13px;
+}
+
+.search-bedrooms {
+  margin-left: 8px;
+}
+
+.search-amenities {
+  margin-left: -10px;
+}
+.vertical-line {
+  background-color: var(--light-gray);
+  height: 40px;
+  width: 1px;
+  margin: 0 15px;
+}
+.search-container select {
+  font-size: 14px;
+}
+
+.location-container-search,
+.bedrooms-container-search,
+.amenities-container-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-container {
+  margin-top: 20px;
+}
+
+.validation-error-search {
+  text-align: center;
+  color: red;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  .search-title {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .search-criteria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-city-country,
+  .search-type,
+  .search-bedrooms,
+  .search-amenities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .location-container-search,
+  .property-container-search,
+  .bedrooms-container-search,
+  .amenities-container-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-area {
+    margin-left: 145px;
+  }
+  .search-area2 {
+    margin-left: -20px !important;
+  }
+
+  .search-area2,
+  .search-type,
+  .search-bedrooms,
+  .search-amenities {
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+}

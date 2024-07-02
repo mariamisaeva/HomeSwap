@@ -1,0 +1,171 @@
+.navbar {
+  background-color: #010625;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 1111;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 130px;
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-link {
+  margin-right: 50px;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-item a:hover {
+  color: #ccc;
+}
+
+#navbar-toggle {
+  display: none;
+}
+
+.sign-up-btn,
+.logout-btn {
+  background: #ae593a;
+  font-size: 20px;
+  padding: 10px 44px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.log-in-btn {
+  font-size: 20px;
+  padding: 10px 49px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  transition: border 0.2s ease-in-out;
+}
+
+.log-in-btn:hover,
+.logout-btn:hover {
+  border: #fff 2px solid;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 35px;
+    top: -50px;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  .navbar-toggle-label2 {
+    position: relative;
+    left: 94%;
+    font-size: 50px;
+    z-index: 1111;
+    color: #fff;
+    top: -96px;
+  }
+
+  #navbar-toggle:checked + .navbar-toggle-label2 + .navbar-menu {
+    display: flex;
+  }
+
+  .logo {
+    width: 130px;
+    margin-left: 20px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 80px;
+    margin-left: 0px;
+    object-fit: cover;
+  }
+
+  .navbar-menu {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  .navbar-toggle-label2 {
+    position: relative;
+    left: 90%;
+    top: -73px;
+    font-size: 20px;
+    color: #fff;
+    font-size: 35px;
+    z-index: 1111;
+  }
+
+  #navbar-toggle:checked + .navbar-toggle-label2 + .navbar-menu {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 27px;
+  }
+}

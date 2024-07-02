@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --bg-color: #b7d9e4;
+  --input-bg: #f5f5f6;
+  --light-gray: #ccc;
+  --light-darkish-blue: #1366ba;
+  --darkish-grey: #333333;
+  --action-btns-color: #27a7ed;
+  --msg-bg: #1a2a4f;
+  --pagination-color: #fff;
+  --card: #021637;
+  --button-hovers: #ae593a;
+}
+
+.swap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  min-height: 100vh;
+}
+
+.swap-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.swap-hero-title {
+  font-size: 30px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.swap-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.swap-property-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 50%;
+  /* max-width: 1000px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Inter";
+  height: 385px;
+  border-radius: 10px;
+  margin: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.swap-property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.swap-property-image-container {
+  border-radius: 20px;
+  margin-right: 10px;
+  /* overflow: hidden; */
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swap-property-image-wrapper {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  border-radius: 20px;
+  position: relative;
+}
+
+.swap-property-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.swap-slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  z-index: 20;
+  position: absolute;
+  bottom: -38px;
+}
+
+.swap-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  z-index: 5;
+}
+
+.swap-pagination-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+  cursor: pointer;
+}
+
+.swap-pagination-indicator.active {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+}
+
+.swap-slider-btn {
+  background-color: var(--card);
+  border: 1px solid var(--card);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+  z-index: 15;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--darkish-grey);
+  margin: 5px;
+}
+
+.swap-slider-btn:hover {
+  background-color: var(--card);
+  transform: scale(1.1);
+}
+
+.swap-property-info {
+  padding: 0 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.swap-property-title {
+  margin: 0;
+  font-family: "Inter";
+  letter-spacing: 0.5px;
+  text-align: left;
+  width: 100%;
+}
+
+.swap-property-detail p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Inter";
+  white-space: nowrap;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.swap-property-availability {
+  padding: 0;
+  margin: 8px 0;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.swap-all-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.swap-more-info-btn {
+  background-color: transparent;
+  color: var(--input-bg);
+  text-decoration: underline;
+  border: none;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.swap-actions {
+  display: flex;
+  gap: 2px;
+}
+
+.swap-remove-btn,
+.swap-confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--button-hovers);
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  border-radius: 5px;
+}
+
+.swap-remove-btn:hover,
+.swap-confirm-btn:hover {
+  background-color: var(--button-hovers);
+  color: white;
+  border-radius: 5px;
+}
+
+.swap-request-list-title {
+  text-align: center;
+  margin: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0;
+  width: 100%;
+  max-height: 500px;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.message-label {
+  font-weight: 500;
+  color: var(--bg-color);
+  font-size: 14px;
+  margin: 5px 0 2px;
+}
+
+.message-bubble {
+  background-color: var(--msg-bg);
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+.message-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: var(--msg-bg);
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+
+/* .upper-container.requests-active {
+  background-color: var(--input-bg);
+} */
+
+.swap-swal-popup {
+  width: 90% !important;
+  max-width: 400px;
+}
+
+.swap-swal-title {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.swap-swal-icon {
+  font-size: 20px;
+  border: var(--button-hovers) solid 8px;
+}
+
+.swap-swal-confirm,
+.swap-swal-cancel {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.swap-swal-confirm {
+  border: 2px solid var(--card);
+}
+
+.swap-swal-cancel {
+  border: var(--button-hovers) solid 2px;
+}
+
+.swap-incoming-outgoing-buttons {
+  display: flex;
+  justify-content: flex-end !important;
+  width: 95%;
+  padding-right: 20px;
+}
+
+.swap-incoming-btn,
+.swap-outgoing-btn {
+  margin-left: 10px;
+  background-color: var(--button-hovers);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.swap-status {
+  color: var(--button-hovers);
+  display: inline-block;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1280px) {
+  .swap-property-card {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+  }
+
+  .swap-property-image-container,
+  .swap-property-info {
+    width: 100%;
+    height: auto;
+  }
+
+  .swap-property-image-wrapper {
+    max-height: 350px;
+  }
+
+  .swap-property-info {
+    text-align: center;
+  }
+  .swap-property-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .chat-container {
+    margin: 0 20%;
+  }
+
+  .swap-all-buttons {
+    text-align: center;
+    flex-direction: column;
+  }
+  .swap-slider-btn {
+    display: none;
+  }
+  .no-message {
+    text-align: center !important;
+    margin-left: 30px !important;
+  }
+
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .message-bubble {
+    width: 300px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 4px;
+    margin-left: -40px;
+  }
+  .message-label {
+    margin-left: -60px;
+  }
+
+  /* .upper-container.requests-active {
+    background-color: #b7d9e4;
+  } */
+}

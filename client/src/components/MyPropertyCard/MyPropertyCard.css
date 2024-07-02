@@ -1,0 +1,50 @@
+.profile-property-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  animation: 1s ease 0s 1 normal none running fadeIn;
+  color: #fff;
+  line-height: 1.5;
+  width: 70%;
+}
+
+.property-card-img {
+  margin-right: 10px;
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 350px;
+  max-height: 350px;
+  border-radius: 8%;
+  object-fit: cover;
+}
+
+.property-card-info {
+  margin-left: 20px;
+}
+
+.property-description-container {
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .profile-property-card {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-property-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .property-card-img {
+    margin: 0;
+  }
+
+  .property-card-info {
+    margin: 0 10px;
+  }
+}
